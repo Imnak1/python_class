@@ -150,7 +150,7 @@ three-step order:
 3. The file is closed. 
 
 When a file is closed, the resources tied to it are freed.
-
+																	
 
 
 
