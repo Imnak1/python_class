@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+"""
 k = [1]
 print(k)
 
@@ -13,13 +13,13 @@ print("Hello. My name is {name}, and I am a {occupation}.".format(occupation = "
 
 #exercise on input 
 
-name = str(input("Enter your name: ")) 
+#name = str(input("Enter your name: ")) 
 
-age = int(input("How old are you?: ")) 
+#age = int(input("How old are you?: ")) 
 
-sex = str(input("Enter your gender M or F: ")) 
+#sex = str(input("Enter your gender M or F: ")) 
 
-location = str(input("Which city do you live in: ")) 
+#location = str(input("Which city do you live in: ")) 
 
 if sex == "M" or "m": 
     gender = "male" 
@@ -30,3 +30,33 @@ else:
 
 print ("{}, you are a {} old {} from {}.".format(name, age, gender, location))
 print (f"{name}, you are a {age} old {gender} from {location}.")
+"""
+"""
+# Opening of File
+
+f = open("poem.txt", "r") 
+poem = f.read(); 
+print(poem) 
+"""
+
+"""
+file = open("myfile.txt", "w") 
+
+file.write("The purple cow poem is a short nonsense poem first published in 1895 written by American writer Gelett Burgess"); 
+file.close() 
+"""
+
+with  open("sample.txt","w") as file:
+    file.write("i love python")
+
+
+with open ("sample.txt", "a+") as file:
+    file.write("\nI am a programmer")
+
+with open("sample.txt", "r") as file:
+    text = file.readline()
+    #print(text)
+    textt = file.readlines()
+    print(textt)   
+
+#module import
