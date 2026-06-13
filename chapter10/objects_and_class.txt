@@ -1,5 +1,22 @@
+10. Objects and Class
 
-d is called instantiation.
+We have already learnt that Python is an object oriented programming
+language. There are other languages that are procedure oriented that emphasize
+on functions, but in Python, the stress is on objects. But then, what is an
+object? Simply put, an object is a collection of methods (functions) that act
+on data (variables) which are also objects. The blueprint for these objects is a class.
+
+Consider a class a sketch or a prototype that has all the details about an
+object.
+
+If your program were a car, a class would contain all the details about the
+design, the chassis, where tires are, and what the windshield is made of. It
+would be impossible to build a car without a class defining it. The car is
+the object.
+
+Because many cars can be built based on the prototype, we can create many
+objects from a class. We can also call an object an instance of a class, and
+the process by which it is created is called instantiation.
 
 
 Defining a Class
@@ -118,8 +135,6 @@ because it is used to initialize all variables.
 
 Exercise63: Constructors
 
-MyObject.greeting() #
-
 class ComplexNumbers:
       def __init__(self, x = 0, y = 0):
            self.real = x
@@ -199,7 +214,7 @@ class. A class defines properties and behaviors using variables and methods.
 Example:
 
 class Dog:
-    def __init_(self, name):
+    def __init__(self, name):
         self.name = name
 
 my_dog = Dog("Buddy")
@@ -245,7 +260,7 @@ Example:
 class Employee:
      company = "TechCorp"
 
-     def _init_(self, name):
+     def __init__(self, name):
           self.name = name
 
     @classmethod
@@ -312,12 +327,12 @@ The super() function is used to call a method from the parent class.
 Example:
 
 class Parent:
-    def _init_(self):
+    def __init__(self):
         print("Parent init")
 
 class Child(Parent):
-       def _init_(self):
-             super()._init_()
+       def __init__(self):
+             super().__init__()
              print("Child init")
 
 
